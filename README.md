@@ -1,6 +1,12 @@
-# CholeskySynth Time-Series Simulator
+![Simulacrum Logo](https://github.com/Smlcrm/smlcrm-brand-assets/blob/main/Asset%201@4x-8.png?raw=true "Simulacrum — CholeskySynth")
 
-CholeskySynth is a multivariate time-series simulator that samples from a matrix-normal distribution using covariance factors constructed from a flexible bank of Gaussian process kernels. It generalizes the univariate KernelSynth procedure by pairing temporal and cross-variate covariances and drawing samples via Cholesky decomposition. This repository hosts a Jupyter notebook implementation that can synthesize large batches of realistic multivariate trajectories for downstream learning objectives.
+# CholeskySynth
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-blue.svg)](https://www.python.org/downloads/)
+[![Version](https://img.shields.io/badge/version-0.1.0-brightgreen.svg)](https://github.com/Smlcrm/CholeskySynth/releases)
+
+A multivariate time-series simulator that samples from a matrix-normal distribution using covariance factors constructed from a flexible bank of Gaussian process kernels. It generalizes the univariate KernelSynth procedure by pairing temporal and cross-variate covariances and drawing samples via Cholesky decomposition. This repository hosts a Jupyter notebook implementation that can synthesize large batches of realistic multivariate trajectories for downstream learning objectives.
 
 - Generates long, multi-variate series with controllable temporal and cross-channel structure.
 - Builds covariance factors by randomly composing Gram matrices derived from common kernels.
@@ -99,10 +105,18 @@ To export a million samples one series at a time, adjust `batch_size`, `length`,
 - **Stability vs. fidelity**: Increase `eps` for more aggressive jitter if you encounter decomposition failures; decrease it to retain sharper correlations once the setup is stable.
 - **Performance**: Leverage GPUs (or TPUs via JAX) when generating very large datasets. Consider reducing `num_time_kernels`/`num_variate_kernels` to shorten kernel composition chains.
 
+## Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for how to propose changes. Please also read our [Code of Conduct](CODE_OF_CONDUCT.md) and [Security Policy](SECURITY.md).
+
 ## Acknowledgements
 
 CholeskySynth is a multivariate extension of KernelSynth [7], relying on properties of the matrix-normal distribution [9]. The implementation here packages the sampling routine, kernel compositions, and dataset writer in a single notebook for reproducibility and reuse.
 
+## License
+
+MIT © Simulacrum, Inc. See [LICENSE](LICENSE).
+
 ---
 
-For questions or contributions, please open an issue or submit a pull request once the repository is expanded beyond the notebook prototype.
+For questions or contributions, please open an issue or submit a pull request.
