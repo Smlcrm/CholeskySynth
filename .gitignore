@@ -1,0 +1,110 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.code-workspace
+*.swp
+*.swo
+
+# Secrets / credentials
+.env
+.env.*
+.envrc
+gcp_credentials.json
+*credentials*.json
+*.key
+*.pem
+*.p12
+
+# Python bytecode / packaging
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual envs
+.venv/
+venv/
+venv*/
+env/
+ENV/
+.conda/
+condaenv/
+
+# Test / type / lint caches
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+.mypy_cache/
+.ruff_cache/
+.tox/
+.nox/
+.hypothesis/
+
+# Logs / temp
+*.log
+*.out
+*.err
+logs/
+tmp/
+temp/
+*.tmp
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Data & generated outputs
+data/
+plots/
+sample_plots/
+outputs/
+results/
+
+# ML / training artifacts
+mlruns/
+mlartifacts/
+checkpoints/
+**/checkpoints/
+runs/
+lightning_logs/
+tensorboard*
+*.tfevents.*
+*.ckpt
+*.pkl
+*.pth
+*.pt
+*.bin
+*.safetensors
+
+# Cloud CLI state
+.gsutil/
+.gcloud/
+
+# Cursor — track shared project config, ignore local/ephemeral state
+.cursor/*
+!.cursor/hooks.json
+!.cursor/hooks/
+!.cursor/hooks/**
+!.cursor/rules/
+!.cursor/rules/**
+!.cursor/python-env.json
+.cursor/mcp.json
+.cursor/plans/
