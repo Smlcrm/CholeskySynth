@@ -4,7 +4,7 @@ flax>=0.8.0
 optax>=0.1.7
 matplotlib>=3.8.0
 numpy>=1.24.0
-orbax-checkpoint==0.11.25
+orbax-checkpoint==0.12.1
 seaborn>=0.13.2
 torch
 torchvision
