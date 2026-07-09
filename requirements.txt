@@ -1,5 +1,5 @@
 cloudpickle>=3.1.1
-google-cloud-storage==3.4.0
+google-cloud-storage==3.12.1
 flax>=0.12.7
 optax>=0.1.7
 matplotlib>=3.11.0
