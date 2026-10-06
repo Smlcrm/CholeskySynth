@@ -1,0 +1,20 @@
+# Keep title, version and
+# repository-code identical to the BibTeX entry in README.md.
+cff-version: 1.2.0
+message: "If you use this software, please cite it using the metadata from this file."
+type: software
+title: "CholeskySynth"
+abstract: "A JAX notebook that generates synthetic multivariate time series by matrix-normal sampling over GP kernels."
+authors:
+  - name: "Simulacrum, Inc."
+    website: "https://smlcrm.com"
+version: "0.1.0"
+date-released: "2026-07-09"
+repository-code: "https://github.com/Smlcrm/CholeskySynth"
+url: "https://smlcrm.com"
+license: "MIT"
+keywords:
+  - "time-series"
+  - "synthetic-data"
+  - "gaussian-processes"
+  - "jax"
