@@ -3,7 +3,7 @@ google-cloud-storage==3.13.0
 flax>=0.12.8
 optax>=0.2.8
 matplotlib>=3.11.1
-numpy>=1.24.0
+numpy>=2.5.3
 orbax-checkpoint==0.12.1
 seaborn>=0.13.2
 torch
